@@ -1,0 +1,161 @@
+.submission-main {
+    padding: var(--spacing-lg) 0;
+}
+
+/* attempt at breadcumb navigation */
+.sub-nav {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: var(--spacing-xs);
+}
+
+.sub-nav a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+/* making header consistent with the rest of the website */
+.page-header {
+    background-color: #ffffff;
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    border-radius: 4px;
+    border-left: 5px solid var(--color-primary); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.page-header h2 {
+    font-family: var(--font-family-primary);
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.page-header p {
+    font-style: italic;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* container of submission form*/
+.submission-form-container {
+    background-color: #ffffff;
+    padding: var(--spacing-md);
+    border-radius: 4px;
+    border: 1px solid var(--color-border-subtle);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+/* submission form styling */
+.submission-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md); 
+}
+
+/* Form Group Styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text-dark);
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="url"],
+.form-group input[type="date"], /* styling group for the form-group */
+.form-group textarea {
+    padding: var(--spacing-sm);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: var(--font-family-sans);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+/* focus effect for input fields and textareas */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--color-secondary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 102, 0, 0.3);
+}
+
+.form-group textarea {
+    resize: vertical; 
+}
+
+.help-text {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-top: 0.25rem;
+}
+
+/* Horizontal Rule for separation between sections */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--color-border-subtle);
+    margin: var(--spacing-sm) 0;
+}
+
+/* Submission Button */
+.btn-primary {
+    background-color: var(--color-primary); 
+    color: var(--color-text-light);
+    border: none;
+    padding: var(--spacing-md);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+    background-color: #003366; 
+    transform: translateY(-1px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Feedback Area for elements added through JS script about status of submissions from the user.*/
+.feedback-area {
+    padding: var(--spacing-sm);
+    border-radius: 4px;
+    margin-bottom: var(--spacing-md);
+    font-weight: bold;
+}
+
+.feedback-area.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.feedback-area.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.processing-note {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+@media (min-width: 600px) {
+    /* Larger inputs and textareas on tablets/desktops */
+    .form-group input[type="text"],
+    .form-group input[type="url"],
+    .form-group input[type="date"], /* Added date type */
+    .form-group textarea {
+        padding: var(--spacing-md);
+    }
+}

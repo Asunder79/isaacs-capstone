@@ -1,0 +1,194 @@
+.articles-main {
+    padding: var(--spacing-lg) 0; /* inherited from landingstyles.css */
+}
+
+/* font adaptive sizing, padding inherited. */
+.sub-nav {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: var(--spacing-xs);
+}
+
+.sub-nav a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+
+/* Page Header */
+.page-header {
+    background-color: #ffffff;
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    border-radius: 4px;
+    /* usage of inherited colors from landingstyles.css to continue the consistent styling*/
+    border-left: 5px solid var(--color-primary); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.page-header h2 {
+    font-family: var(--font-family-primary);
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.page-header p {
+    font-style: italic;
+    color: #555;
+    font-size: 1rem;
+}
+
+/*styles for the search filter */
+.article-controls {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-sm);
+    background-color: #ffffff;
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+}
+
+#article-filter-form {
+    display: flex;
+    flex-direction: column; /* set to stack vertically on smaller devices, using flexbox for this */
+    gap: var(--spacing-sm);
+}
+
+#search-input,
+#sort-select {
+    padding: var(--spacing-xs);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    flex-grow: 1;
+    /* Consistent focus styling */
+}
+
+#search-input:focus,
+#sort-select:focus {
+    border-color: var(--color-secondary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 102, 0, 0.3);
+}
+
+/* use the small spacing variable from landingstyles.css, vertical alignment */
+.article-list-container {
+    padding: var(--spacing-sm) 0;
+}
+
+.articles-grid {
+    display: grid;
+    /* smaller devices get vertical alignment */
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+#loading-message {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #6c757d;
+    grid-column: 1 / -1;
+}
+
+
+/* Article cards will be dynamic, procedural generation when the script is finished will be introduced */
+.article-card {
+    background-color: #ffffff;
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-border-subtle);
+    border-left: 5px solid var(--color-primary);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: var(--color-text-dark);
+    display: block;
+}
+/* Hover effect to lift the card slightly, adding depth */
+.article-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.article-card h3 {
+    font-family: var(--font-family-primary);
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.3;
+}
+/* meta info like author, date */
+.article-meta {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: var(--spacing-sm);
+}
+/* summary text of the article */
+.article-summary {
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* read more link */
+.read-more {
+    display: inline-block;
+    font-weight: bold;
+    color: var(--color-secondary);
+    font-size: 0.9rem;
+}
+/* The above three styles pertain to the article card content items, not yet added, doodles of what these cards will look like to
+ be finalized
+*/
+
+
+/* styling for the pagination controls */
+.pagination-area {
+    text-align: center;
+    padding: var(--spacing-md) 0;
+}
+/* individual pagination buttons, yet to be implemented */
+.pagination-button {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border: none;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    margin: 0 var(--spacing-xs);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover:not(.active) {
+    background-color: #003366;
+}
+
+.pagination-button.active {
+    background-color: var(--color-secondary);
+    pointer-events: none;
+}
+
+
+/* Reactive media queries for smaller and larger devices */
+
+@media (min-width: 600px) {
+    /* Tablet or small devices */
+
+    #article-filter-form {
+        /* Side-by-side controls */
+        flex-direction: row; 
+    }
+}
+
+@media (min-width: 768px) {
+    .articles-grid {
+        /* small desktop/large tablet */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1000px) {
+    .articles-grid {
+        /* Large desktop, three columns */
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

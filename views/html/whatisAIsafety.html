@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Safety Fundamentals | AI&I</title>
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/landingstyles.css"> <!-- Reuse landing styles for consistency -->
+    <link rel="stylesheet" href="/public/css/contentstyles.css">  <!-- New stylesheet for content pages -->
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-logo">
+                <a href="/">AI&I</a>
+            </h1>
+        </div>
+    </header>
+
+    <main class="content-main">
+        <div class="container">
+
+            <nav class="breadcrumb-nav">
+                <a href="/" class="back-link">&leftarrow; Return to Knowledge Hub</a> <!--This arrow is a leftwards arrow symbol for navigation , STILL doesn't work-->
+            </nav>
+
+            <article class="article-content">
+                <header class="article-header">
+                    <h2>The Fundamentals of AI Safety</h2>
+                    <p class="introduction">Navigate the core concepts and critical questions driving the field of AI safety research.</p>
+                </header>
+
+                <section class="table-of-contents">
+                    <h3>Table of Contents</h3>
+                    <ul class="toc-list">
+                        <li><a href="#what-is-safety">1. What is AI Safety?</a></li>
+                        <li><a href="#alignment-problem">2. The Core Challenge: Alignment</a></li>
+                        <li><a href="#types-of-risk">3. Understanding the Types of Risk</a></li>
+                        <li><a href="#capability-vs-safety">4. Capability vs. Safety Research</a></li>
+                        <li><a href="#key-concepts">5. Key Terminology You Need to Know</a></li>
+                    </ul>
+                </section>
+                
+                <hr>
+
+                <section id="what-is-safety" class="content-section">
+                    <h3>1. What is AI Safety?</h3>
+                    <p><strong>AI Safety</strong> is a field of research dedicated to ensuring that advanced artificial intelligence systems are robustly 
+                        beneficial to humanity. It's about preventing unintentional harm, misuse, or existential risks that could arise as AI systems become 
+                        more powerful and autonomous.</p>
+                    <div class="callout">
+                        <h4>A Simple Analogy:</h4>
+                        <p>If building a car is AI **Capability** research (making it fast), then AI **Safety** research is building reliable brakes, 
+                            steering, and airbags (making sure it goes where intended and protects its occupants, while complying with AI regulations and 
+                            ethical standards).</p>
+                    </div>
+
+                </section>
+
+                <hr>
+
+                <section id="alignment-problem" class="content-section">
+                    <h3>2. The Core Challenge: Alignment</h3>
+                    <p>The primary concern in AI safety is the **AI Alignment Problem**. This is the challenge of ensuring that an AI system's objectives, 
+                        intentions, and behavior are aligned with human values and ethical principles.</p>
+                    <p>A misaligned AI could:</p>
+                    <ul>
+                        <li><strong>Misinterpret Goals:</strong> Achieve a literal interpretation of a command that violates the spirit of the command 
+                            (e.g., maximizing paperclip production by using all Earth's resources).</li>
+                        <li><strong>Develop Instrumental Goals:</strong> Independently develop goals that are helpful for achieving its primary task, 
+                            but dangerous to humans (e.g., self-preservation or acquiring more resources).</li>
+                    </ul>
+                </section>
+
+                <hr>
+
+                <section id="types-of-risk" class="content-section">
+                    <h3>3. Understanding the Types of Risk</h3>
+                    <p>AI risks are often categorized into two main areas:</p>
+                    
+                    <h4>3.1. Technical/Existential Risk (X-Risk)</h4>
+                    <p>This risk focuses on the catastrophic failure of a highly capable, potentially **superintelligent** AI system due to a fundamental failure
+                         in the alignment process. This is a technical problem focusing on the AI's internal design, goal structure, and control mechanisms.</p>
+                    
+                    <h4>3.2. Misuse/Immediate Risk (M-Risk)</h4>
+                    <p>This risk focuses on the immediate or near-term harm caused by existing or near-future AI systems. Examples include:</p>
+                    <ul>
+                        <li>Autonomous weapons (AWs)</li>
+                        <li>Reinforcing harmful societal biases (Bias/Fairness)</li>
+                        <li>Job displacement and economic instability</li>
+                        <li>Widespread misinformation (Deepfakes)</li>
+                    </ul>
+                </section>
+
+                <hr>
+
+                <section id="capability-vs-safety" class="content-section">
+                    <h3>4. Capability vs. Safety Research</h3>
+                    <p>These two fields are distinct but intrinsically linked:</p>
+                    
+                    <div class="comparison-table">
+                        <div class="column">
+                            <h4>Capability Research</h4>
+                            <p>Focuses on making AI systems **more powerful**, faster, and better at solving complex problems. **Goal:** *Can it be done?*</p>
+                            <ul>
+                                <li>Training larger models</li>
+                                <li>Developing new architectures (e.g., Transformers)</li>
+                                <li>Improving computational efficiency</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h4>Safety Research</h4>
+                            <p>Focuses on making powerful AI systems **reliable**, controllable, and aligned with human intent. **Goal:** *Should it be done, 
+                                and how can it be controlled?*</p>
+                            <ul>
+                                <li>Interpretability (e.g., understanding *why* an AI made a decision)</li>
+                                <li>Robustness (e.g., preventing adversarial attacks)</li>
+                                <li>Value Learning (e.g., teaching the AI what humans value)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="key-concepts" class="content-section">
+                    <h3>5. Key Terminology You Need to Know</h3>
+                    <dl class="terminology-list"> <!-- Definition List for key terms, experimenting with semantic style of HTML -->
+                        <dt>Superintelligence</dt>
+                        <dd>An intellect that is vastly smarter than the best human brains in practically every field, including scientific creativity, 
+                            general wisdom, and social skills.</dd>
+                        
+                        <dt>Interpretability (XAI)</dt>
+                        <dd>The ability to explain or present in understandable terms how an AI model reached a particular decision or prediction.</dd>
+
+                        <dt>Adversarial Examples</dt>
+                        <dd>Inputs to an AI model that have been subtly manipulated to cause the model to make a mistake (e.g., misclassifying an image).</dd>
+                        
+                        <dt>Instrumental Convergence</dt>
+                        <dd>The idea that highly intelligent, goal-directed systems will converge upon a set of common "instrumental" subgoals 
+                            (like self-preservation and resource acquisition), regardless of their ultimate goal. These are often considered dangerous.</dd>
+                    </dl>
+                </section>
+
+                <hr>
+
+                <section class="final-cta">
+                    <p class="mission-statement">Ready to dive deeper? Select a path below to continue your journey through the AI safety landscape.</p>
+                    <a href="/AIArticles.html" class="explore-btn">Explore Curated Research Articles $\rightarrow$</a>
+                </section>
+
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p> AI&I. The Knowledge Hub on AI Safety.</p>
+        </div>
+    </footer>
+
+    </body>
+</html>

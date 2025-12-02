@@ -1,0 +1,253 @@
+/* 'Variable Styles' I am experimenting with. Can be used throughout the CSS for consistency and easy theming */
+:root {
+    --color-primary: #004d99; /* Deep Blue  */
+    --color-secondary: #ff6600; /* Orange */
+    --color-background-light: #f4f6f8; /* Very light grey */
+    --color-text-dark: #1a1a1a; /* Near-black  */
+    --color-text-light: #ffffff; /* White */
+    --color-card-background: #ffffff; /* White  */
+    --color-border-subtle: #d3dce6; /* Subtle light border */
+
+    /* To give a kinda 'academic' feel to the text */
+    --font-family-primary: 'Georgia', serif;
+    --font-family-sans: 'Helvetica Neue', Arial, sans-serif;
+
+    /* Spacing and sizing to be experimented with, variables to be used throughout */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --max-width-desktop: 1200px;
+}
+
+/*  Universal selector, experimenting with it for styles and selectors*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* font size should react as the screen does due to REM usage */
+    font-size: 100%;
+}
+
+body {
+    font-family: var(--font-family-sans);
+    color: var(--color-text-dark);
+    background-color: var(--color-background-light);
+    line-height: 1.6;
+}
+
+/* Utility Class */
+.container {
+    width: 90%;
+    max-width: var(--max-width-desktop);
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--spacing-sm) 0;
+}
+
+/* --- Header & Navigation --- */
+.main-header {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: var(--spacing-sm) 0;
+    border-bottom: 5px solid var(--color-secondary); /* testing application of 'variable' styles established in root */
+}
+
+.site-logo a {
+    font-family: var(--font-family-primary);
+    font-size: 1.8rem; /* font will react to screen size due to REM usage */
+    font-weight: bold;
+    color: var(--color-text-light);
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.site-logo a:hover {
+    color: var(--color-secondary); /* Hover color change for interactivity */
+}
+
+/* --- Main Content Sections --- */
+.landing-main {
+    padding-bottom: var(--spacing-lg);
+    /* Separate from footer, using spacing variables */
+}
+
+section {
+    padding: var(--spacing-lg) 0;
+}
+
+/* Main center of navigation, leads to the other pages and functionalities */
+.hero-gateway {
+    background-color: var(--color-card-background);
+    padding-bottom: var(--spacing-md); /* Padding using medium spacing */
+}
+
+.hero-gateway h2 {  
+    font-family: var(--font-family-primary);
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.2;
+}
+
+.mission-statement {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-lg);
+    border-left: 4px solid var(--color-secondary); /* important text, using secondary color and add indentation */
+    padding-left: var(--spacing-sm);
+}
+
+/* List of nav links - direct children of the container holding these. Leads to other pages. */
+.nav-links-grid {
+    list-style: none;
+    display: grid;
+    /* Stack items vertically on mobile */
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+.nav-card {
+    display: block; /* Make the card interactive (clickable) */
+    text-decoration: none;
+    color: var(--color-text-dark);
+    background-color: var(--color-card-background);
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Gives a lift to the card on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* ensures all cards are the same height in the grid */
+}
+
+.nav-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-card h3 {
+    font-family: var(--font-family-primary);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.nav-card p {
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.nav-action {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Make each card have its own distinct color and theme */
+.primary-path {
+    border-left: 5px solid var(--color-primary); 
+}
+.secondary-path {
+    border-left: 5px solid #28a745; /* exploration as green- chosen due to its association with growth and learning */
+}
+.contribution-path {
+    border-left: 5px solid #6f42c1; /* contribution as purple- chosen due to its association with creativity and collaboration */
+}
+
+.primary-path .nav-action { color: var(--color-primary); }
+.secondary-path .nav-action { color: #28a745; }
+.contribution-path .nav-action { color: #6f42c1; }
+
+
+/* Quick Insight Section */
+.quick-insight {
+    background-color: var(--color-background-light);
+    padding-top: var(--spacing-md);
+}
+
+.quick-insight h3 {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.fact-display {
+    background-color: var(--color-card-background);
+    border: 1px solid var(--color-border-subtle);
+    padding: var(--spacing-md);
+    border-radius: 4px;
+    font-style: italic;
+    border-left: 4px solid var(--color-secondary);
+}
+
+.fact-text {
+    margin-bottom: var(--spacing-xs);
+}
+
+.fact-source {
+    display: block;
+    font-size: 0.85rem;
+    color: #6c757d;
+    text-align: right;
+    font-style: normal;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: var(--color-text-dark);
+    color: var(--color-border-subtle);
+    font-size: 0.85rem;
+    padding: var(--spacing-sm) 0;
+    text-align: center;
+}
+
+
+/* --- Tablet and Desktop (Reactive Sizing with Media Queries) --- */
+
+@media (min-width: 600px) {
+    /* Tablet size adjustments */
+
+    .container {
+        padding: var(--spacing-md) 0;
+    }
+
+    .site-logo a {
+        font-size: 2.2rem;
+    }
+
+    .hero-gateway h2 {
+        font-size: 2.5rem;
+    }
+
+    .nav-links-grid {
+        /* Two columns on tablet */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-card h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    /* Desktop size adjustments */
+
+    .container {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .site-logo a {
+        font-size: 2.5rem;
+    }
+
+    .hero-gateway h2 {
+        font-size: 3rem;
+    }
+
+    .nav-links-grid {
+        /* Three columns on desktop */
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-lg);
+    }
+}

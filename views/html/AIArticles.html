@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>AI&I | Explore Articles</title>
+ <link rel="stylesheet" href="/public/css/reset.css">
+ 
+     <link rel="stylesheet" href="/public/css/landingstyles.css"> 
+    
+    <link rel="stylesheet" href="/public/css/AIArticlesStyles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-logo">
+                <a href="/">AI&I</a>
+            </h1>
+            <nav class="sub-nav">
+                <a href="/">Home</a> &gt; Articles
+            </nav>
+        </div>
+    </header>
+
+    <main class="articles-main">
+        <div class="container">
+            <section class="page-header">
+                <h2>AI Safety Research Articles</h2>
+                <p>Browse the latest articles and research summaries, made accessible by our AI summarization tool.</p>
+            </section>
+
+            <section class="article-controls">
+                <form id="article-filter-form">
+                    <input type="search" id="search-input" placeholder="Search by keyword or title...">
+                    <select id="sort-select">
+                        <option value="date-desc">Newest First</option>
+                        <option value="date-asc">Oldest First</option>
+                        <option value="title-asc">Title (A-Z)</option>
+                    </select>
+                </form>
+            </section>
+
+            <section class="article-list-container">
+                <!-- Articles will be dynamically inserted here, they will be cards. Basic structire is one column and four rows.
+                 Will adapt based on media queries. This here is the parent container of all cards. -->
+                <div id="articles-list-grid" class="articles-grid">
+                    <p id="loading-message">Loading articles... Please wait.</p> <!-- this will be replaced dynamically -->
+                </div>
+            </section>
+
+            <div id="pagination-controls" class="pagination-area">
+                </div> <!-- Pagination controls will be dynamically inserted here -->
+            
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p> AI&I. The Knowledge Hub on AI Safety.</p>
+        </div>
+    </footer>
+
+    <script src="/clientjs/main.js"></script>
+    <script src="/clientjs/article-renderer.js"></script> 
+</body>
+</html>

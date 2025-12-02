@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI&I | Submit an Article</title>
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/landingstyles.css"> 
+    <link rel="stylesheet" href="/public/css/AiArticleSubStyles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-logo">
+                <a href="/">AI&I</a>
+            </h1>
+            <nav class="sub-nav">
+                <a href="/">Home</a> &gt; Contribute
+            </nav>
+        </div>
+    </header>
+
+    <main class="submission-main">
+        <div class="container">
+            <section class="page-header">
+                <h2>Submit an AI Safety Article</h2>
+                <p>Share important research. Our system will use an external API to generate a clear, accessible summary for our 
+                    knowledge hub.</p>
+            </section>
+
+            <section class="submission-form-container">
+                <form id="article-submission-form" class="submission-form">
+
+                    <div class="form-group">
+                        <label for="article-title">Article Title **(Required)**</label>
+                        <input type="text" id="article-title" name="title" required 
+                               placeholder="e.g., The Need for Robust AI Alignment">
+                        <small class="help-text">The full, accurate title of the article or paper.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="source-url">Article URL **(Required)**</label>
+                        <input type="url" id="source-url" name="sourceUrl" required 
+                               placeholder="https://example.com/research-paper-link">
+                        <small class="help-text">A direct link to the publicly accessible paper or article.</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="author-name">Author Name(s) **(Required)**</label>
+                        <input type="text" id="author-name" name="author" required 
+                               placeholder="e.g., Jane Doe, John Smith">
+                        <small class="help-text">List the primary author(s) as they appear in the source.</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="publication-date">Publication Date **(Required)**</label>
+                        <input type="date" id="publication-date" name="pubDate" required>
+                        <small class="help-text">The date the article was first published or posted.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="submission-notes">Notes for Reviewer (Optional)</label>
+                        <textarea id="submission-notes" name="notes" rows="3" 
+                                 placeholder="E.g., 'This paper covers a new breakthrough in mechanistic interpretability.'"></textarea>
+                        <small class="help-text">Any context you want to provide for review.</small>
+                    </div>
+                    
+                    <hr>
+
+                    <div id="submission-feedback" class="feedback-area" role="alert" style="display: none;">
+                    </div> <!-- A feedback system for submission request and API calls, if successful, card with feedback and summary
+                    is generated and presented, if failed, error code is presented instead to the user. NOT YET WORKING! -->
+
+                    <button type="submit" id="submit-button" class="btn btn-primary">
+                        Submit Article for Review & Summary
+                    </button>
+                    
+                    <p class="processing-note">Submission may take a moment while the AI generates the summary.</p>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p> AI&I. The Knowledge Hub on AI Safety.</p>
+        </div>
+    </footer>
+
+    <script src="/clientjs/main.js"></script>
+    <script src="/clientjs/submission-handler.js"></script> 
+</body>
+</html>
