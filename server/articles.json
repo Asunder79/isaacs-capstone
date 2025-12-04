@@ -1,0 +1,44 @@
+[
+{
+"id":1,
+"title":"FUBAR 1" ,
+"author":"FUBAR 1" ,
+"date":"03/4/2024",
+"summary":"FUBAR 1",
+"URL":"FUBAR 1"
+}
+,
+{
+"id":2,
+"title":"FUBAR 2" ,
+"author":"FUBAR 2" ,
+"date":"02/17/2017",
+"summary":"FUBAR 2",
+"URL":"FUBAR 2"
+}
+,
+{
+"id":3,
+"title":"FUBAR 3" ,
+"author":"FUBAR 3" ,
+"date":"07/29/2023",
+"summary":"FUBAR 3",
+"URL":"FUBAR 3"
+},
+{
+"id":4,
+"title":"FUBAR 4" ,
+"author":"FUBAR 4" ,
+"date":"10/4/2010",
+"summary":"FUBAR 4",
+"URL":"FUBAR 4"
+},
+{
+"id":5,
+"title":"FUBAR 5" ,
+"author":"FUBAR 5" ,
+"date":"12/25/2022",
+"summary":"FUBAR 5",
+"URL":"FUBAR 5"
+}
+]
