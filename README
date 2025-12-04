@@ -1,0 +1,133 @@
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+There are many great knowledge hubs available on the internet; however, I didn't find one focused on AI that truthfully felt like
+users can contribute to a shared pool of knowledge and information.
+Here's why:
+
+- Your time should be focused on curating a shared information pool. A pool which you can contribute to
+- You shouldn't let being uninformed create fear of an industry shifting tool. Use our pool of knowledge to better inform yourself.
+- Forewarned is forearmed. You can make better informed advocacy decisions using our tool than before.
+
+Of course, for the time being this is rudimentary. I look to expand my app after this program to maybe introduce a discussion system, and a user/profile system (as it stands, its an anonymous knowledge hub where anyone can contribute)
+
+### Built With
+
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
+- express 5.2.1 or greater
+- nodejs
+- nodemon 3.1.11 or greater
+- commonjs
+- Live Server for VScode
+-
+-
+-
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+
+- nodejs
+- npm
+
+### Installation
+
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/Asunder79/isaacs-capstone.git
+   ```
+3. Install NPM packages and node
+   ```sh
+   npm install express
+   ```
+4. Enter your API in `config.js` ###AN API KEY MAY BE IMPLEMENTED AT A LATER DATE FOR MY GEMINI API
+   ```js
+   <!-- const API_KEY = 'ENTER YOUR API'; -->
+   ```
+5. Run the start script:
+   "npm start"
+
+FOR DEV DEPENDENCIES:
+
+- commonjs
+- Live Server
+- Javascript ES6 Code Snippet (Visual Studio Code)
+- Prettier Code formatter
+- HTML CSS Support
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+- [x] Persist important data to users (need to get importing to work)
+- [x] create a node.js web server using Express.js
+- [x] Create an API that implements HTTP request
+- [ ] Add Gemini AI API for text summaries {AMBITIOUS, MAY NOT BE DONE BEFORE 12/19/2025}
+- [ ] Discussion forum _MUCH LATER_
+- [ ] Security and authenication of users (and their data) _MUCH LATER_
+
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the Unlicense License. See `LICENSE.txt` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+
+- [Choose an Open Source License](https://choosealicense.com)
+- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+- [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+- [Malven's Grid Cheatsheet](https://grid.malven.co/)
+- [Img Shields](https://shields.io)
+- [GitHub Pages](https://pages.github.com)
+- [Font Awesome](https://fontawesome.com)
+- [React Icons](https://react-icons.github.io/react-icons/search)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
