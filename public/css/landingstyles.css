@@ -193,7 +193,6 @@ section {
     font-style: normal;
 }
 
-/* --- Footer --- */
 .main-footer {
     background-color: var(--color-text-dark);
     color: var(--color-border-subtle);
@@ -203,10 +202,10 @@ section {
 }
 
 
-/* --- Tablet and Desktop (Reactive Sizing with Media Queries) --- */
+
 
 @media (min-width: 600px) {
-    /* Tablet size adjustments */
+
 
     .container {
         padding: var(--spacing-md) 0;
@@ -221,7 +220,6 @@ section {
     }
 
     .nav-links-grid {
-        /* Two columns on tablet */
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -231,7 +229,6 @@ section {
 }
 
 @media (min-width: 1000px) {
-    /* Desktop size adjustments */
 
     .container {
         padding: var(--spacing-lg) 0;
@@ -246,7 +243,6 @@ section {
     }
 
     .nav-links-grid {
-        /* Three columns on desktop */
         grid-template-columns: repeat(3, 1fr);
         gap: var(--spacing-lg);
     }

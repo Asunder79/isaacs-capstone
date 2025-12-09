@@ -127,10 +127,10 @@
 }
 
 .comparison-table .column:first-child {
-    background-color: #fff8e1; /* Light yellow for Capability, hinting 'warning or danger' of unchecked capability */
+    background-color: #fff8e1; 
 }
 .comparison-table .column:last-child {
-    background-color: #e6ffed; /* Light green for Safety, hinting 'safety and approval' */
+    background-color: #e6ffed; 
 }
 
 @media (min-width: 768px) {
