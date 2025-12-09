@@ -1,44 +1,50 @@
 [
-{
-"id":1,
-"title":"FUBAR 1" ,
-"author":"FUBAR 1" ,
-"date":"03/4/2024",
-"summary":"FUBAR 1",
-"URL":"FUBAR 1"
-}
-,
-{
-"id":2,
-"title":"FUBAR 2" ,
-"author":"FUBAR 2" ,
-"date":"02/17/2017",
-"summary":"FUBAR 2",
-"URL":"FUBAR 2"
-}
-,
-{
-"id":3,
-"title":"FUBAR 3" ,
-"author":"FUBAR 3" ,
-"date":"07/29/2023",
-"summary":"FUBAR 3",
-"URL":"FUBAR 3"
-},
-{
-"id":4,
-"title":"FUBAR 4" ,
-"author":"FUBAR 4" ,
-"date":"10/4/2010",
-"summary":"FUBAR 4",
-"URL":"FUBAR 4"
-},
-{
-"id":5,
-"title":"FUBAR 5" ,
-"author":"FUBAR 5" ,
-"date":"12/25/2022",
-"summary":"FUBAR 5",
-"URL":"FUBAR 5"
-}
+  {
+    "id": 1,
+    "title": "Top 12 AI Security Risks You Can’t Ignore",
+    "author": "Stephen Thoemmes",
+    "date": "Date not Provided",
+    "summary": "The article Top 12 AI Security Risks You Can’t Ignore outlines the significant security challenges introduced by the widespread adoption of Generative AI, emphasizing that businesses must proactively understand and mitigate these new threats. The twelve key risks are categorized into several areas: attacks targeting the AI model or data (Adversarial attacks, Data poisoning, Model inversion attacks, Model theft, and Inference attacks); systemic flaws (Lack of explainability and Code vulnerabilities in AI-generated code); and organizational/operational risks (Shadow AI, Supply chain risks, Deepfakes/AI-powered social engineering, Data leakage, and Privacy violations). The article stresses that insufficient oversight of the data fueling Large Language Models (LLMs) and their implementation is a primary concern, contributing to vulnerabilities and security breaches.",
+    "URL": "https://snyk.io/articles/top-12-ai-security-risks-you-cant-ignore/?utm_medium=paid-search&utm_source=google&utm_campaign=dm_googl-ps_aom_250501_next-gen-ai&utm_content=risk-detection&utm_term=ai%20risks&campaign_id=22593247415&ad_group_id=182846859591&ad_id=754025289810&match_type=p&target=kwd-408277305971&gad_source=1&gad_campaignid=22593247415&gbraid=0AAAAADcQj7QvZAZ7SO96HhNSC8XqOQr73&gclid=Cj0KCQiAi9rJBhCYARIsALyPDtvSX5el3mGcf_o574ltuAPceHAIWmU8Saz7B1keBk4Zzf5ujGfMdsoaAseWEALw_wcB"
+  },
+  {
+    "id": 2,
+    "title": "AI safety report warns industry is 'structurally unprepared' for rising risks",
+    "author": "Maura Barrett",
+    "date": "12/04/2025",
+    "summary": "A new report, identified as the AI Safety Index from the Future of Life Institute, warns that the artificial intelligence industry is 'structurally unprepared' for the rising risks posed by rapidly advancing AI systems, particularly those related to Artificial General Intelligence (AGI) and superintelligence. The report analyzed the safety protocols of eight leading AI companies and found a significant, dangerous gap between their ambitious capabilities and their actual safety commitment. Notably, no company scored higher than a 'D' in the critical 'existential safety' domain, indicating a systemic failure across the sector to develop concrete, actionable plans, control strategies, or credible long-term risk-management protocols for potential catastrophic events.",
+    "URL": "https://www.scrippsnews.com/science-and-tech/artificial-intelligence/ai-safety-report-warns-industry-is-structurally-unprepared-for-rising-risks"
+  },
+  {
+    "id": 3,
+    "title": "Policy-shaped prediction: avoiding distractions in model-based reinforcement learning",
+    "author": "Miles Hutson, Isaac Kauvar, Nick Haber",
+    "date": "12/08/2024",
+    "summary": "introduces a novel method called Policy-Shaped Prediction (PSP) to enhance Model-Based Reinforcement Learning (MBRL) agents' robustness against environmental distractions. The core problem PSP addresses is that conventional reconstruction-based MBRL methods often waste the capacity of their world models on irrelevant, yet highly predictable, background details. This focus on 'learnable distractors' needlessly consumes the model's resources, ultimately hindering its ability to learn an effective policy. PSP is designed to ensure the agent's world model prioritizes sensory information that is most critical to the policy's decision-making and the task at hand.",
+    "URL": "https://neurips.cc/virtual/2024/poster/94051"
+  },
+  {
+    "id": 4,
+    "title": "How Culture Shapes What People Want From AI",
+    "author": "Xiao Ge, Chunchen Xu, Daigo Misaki, Hazel Rose Markus, Jeanne L. Tsai",
+    "date": "05/11/2024",
+    "summary": "'How Culture Shapes What People Want From AI,' presents a novel conceptual framework arguing that an urgent need exists to incorporate the perspectives of culturally diverse groups into AI development. The researchers applied a cultural psychology framework that distinguishes between two models of the self: the independent model (prevalent in European American contexts, viewing the self as separate and in control) and the interdependent model (common in Chinese contexts, viewing the self as fundamentally connected to others and the environment). Through two survey studies, the research team found that people apply these cultural models when imagining their ideal AI, providing preliminary empirical evidence that culture significantly shapes user preferences regarding AI's purpose, form, and functions.",
+    "UR3c7a4c66-5aee-44a3-bd20-38f2c96666c8L": "https://dl.acm.org/doi/abs/10.1145/3613904.3642660"
+  },
+  {
+    "id": 5,
+    "title": "How persuasive is AI-generated propaganda?",
+    "author": "Josh A Goldstein , Jason Chao , Shelby Grossman",
+    "date": "02/20/2024",
+    "summary": "The article highlights that the rapid advancements in multimodal generative AI—which can produce hyper-realistic deepfakes across images, audio, text, and video—pose a critical and growing threat to information integrity and public trust. A core finding is that both humans and current AI detection systems are increasingly failing to reliably distinguish between real and fabricated content. This unprecedented sophistication, where synthetic media is often indistinguishable from authentic human-created content, creates profound societal challenges by enabling the automated production and proliferation of misinformation at scale, which can easily overwhelm existing safeguards and sow distrust across all forms of digital media.",
+    "URL": "https://academic.oup.com/pnasnexus/article/3/2/pgae034/7610937?login=false"
+  },
+  {
+    "id": 6,
+    "title": "‘It keeps me awake at night’: machine-learning pioneer on AI’s threat to humanity",
+    "author": "Davide Castelvecchi & Benjamin Thompson",
+    "date": "2025-11-12",
+    "summary": "Placeholder TEXT,MANUAL INSERTION ACTIVATED!!",
+    "URL": "https://www.nature.com/articles/d41586-025-03686-1"
+  }
 ]
