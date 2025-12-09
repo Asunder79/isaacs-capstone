@@ -1,0 +1,1 @@
+//Handles the serving of static HTML pages for different routes in the application. 
