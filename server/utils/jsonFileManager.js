@@ -7,16 +7,16 @@ const path = require('path');
 // and finally into the 'Data' folder to find 'articles.json'.
 const DATA_FILE_PATH = path.join(__dirname, '..', 'articles.json');
 
-/**
- * reads and parses the JSON file containing all articles.
- * @returns {Promise<Array>} A promise that resolves with the array of article objects.
- */
+
+ // reads and parses the JSON file containing all articles.
+ // returns  promise that resolves with the array of article objects.
+
 async function readArticles() {
     try {
         const data = await fs.readFile(DATA_FILE_PATH, 'utf-8');
         return JSON.parse(data);
     } catch (error) {
-        // If the file doesn't exist yet (ENOENT), return an empty array to initialize the system.
+        // If the file doesn't exist yet return an empty array to initialize the system.
         if (error.code === 'ENOENT') {
             console.warn(`Data file not found at ${DATA_FILE_PATH}. Initializing with an empty array.`);
             return [];
@@ -26,12 +26,10 @@ async function readArticles() {
     }
 }
 
-/**
- * writes the entire array of articles back to the JSON file.
- */
+  //writes the entire array of articles back to the JSON file.
 async function writeArticles(articles) {
     try {
-        // Convert the JavaScript array to a formatted JSON string (using 2-space indentation).
+        // Convert the JavaScript array to a formatted JSON string
         const jsonString = JSON.stringify(articles, null, 2); 
         await fs.writeFile(DATA_FILE_PATH, jsonString, 'utf-8');
     } catch (error) {

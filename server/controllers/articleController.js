@@ -6,15 +6,14 @@ const { readArticles, writeArticles } = require('../utils/jsonFileManager');
 const { generateSummary } = require('../utils/summarizationAPI');
 // const { v4: uuidv4 } = require('uuid'); // Used to generate unique IDs, broken, will fix later
 
-/**
- * Handles a new article submission, calls the external AI summary, 
- * and saves the new article object to the articles.json file.
- */
+//Handles a new article submission, calls the external AI summary, 
+//and saves the new article object to the articles.json file.
+
 const submitNewArticle = async (req, res) => {
     // Destructure input fields sent from the client's submissionhandler.js
     const { title, author, pubDate, sourceUrl, notes } = req.body;
 
-    // 1. Server-Side Validation
+    // Server-Side Validation
     if (!title || !author || !pubDate || !sourceUrl) {
         return res.status(400).json({ message: 'Missing required article details (Title, Author, Date, or URL).' });
     }
@@ -43,13 +42,13 @@ const submitNewArticle = async (req, res) => {
             //commented out the past two lines for the time being, until manual review process is built
         };
 
-        // 4. Append the new article object to the array
+        //  Append the new article object to the array
         allArticles.push(newArticle);
 
-        // 6. Write the updated array back to the JSON file
+        //  Write the updated array back to the JSON file
         await writeArticles(allArticles);
 
-        // 7. Send successful response back to the client
+        // Send successful response back to the client
         res.status(201).json({ 
             status: 'success',
             message: 'Article submitted successfully and summary generated. Awaiting review.',
@@ -68,6 +67,6 @@ const submitNewArticle = async (req, res) => {
 };
 
 module.exports = {
-    // ... other controller functions, in the event they are added later
+    // ... other controller functions, in the event they are added later, like getArticles, deleteArticle, etc.
     submitNewArticle
 };
