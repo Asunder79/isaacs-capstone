@@ -24,6 +24,8 @@
 //     });
     let allarticles=[]
     const sortSelect = document.getElementById('sort-select');
+    searchinput = document.getElementById('search-input');
+
 
 function createArticleCardHTML(article) {
 
@@ -74,6 +76,18 @@ function sortArticles(articles,sortType){
     return sortedArticles;
 }
 
+function searchArticles(articles, searchTerm) {
+    if (!searchTerm) {
+        return articles; // If search term is empty, return all articles
+    }
+    const lowerCaseTerm = searchTerm.toLowerCase();
+    return articles.filter(article => 
+        article.title.toLowerCase().includes(lowerCaseTerm) ||
+        article.author.toLowerCase().includes(lowerCaseTerm) ||
+        article.summary.toLowerCase().includes(lowerCaseTerm)
+    );
+}
+
 function handleSortChange() {
     const selectedValue = sortSelect.value;
     
@@ -118,3 +132,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial load of articles
     loadArticles();
 });
+
+    searchinput.addEventListener('input', () => {
+        const searchTerm = searchinput.value.trim()
+        const filteredArticles = searchArticles(allarticles, searchTerm);
+        renderArticles(filteredArticles);
+    },);
