@@ -46,5 +46,13 @@
     "date": "2025-11-12",
     "summary": "Placeholder TEXT,MANUAL INSERTION ACTIVATED!!",
     "URL": "https://www.nature.com/articles/d41586-025-03686-1"
+  },
+  {
+    "id": 7,
+    "title": "What is AI? (IBM)",
+    "author": "Cole Stryker and Eda Kavlakoglu",
+    "date": "2025-12-16",
+    "summary": "Placeholder TEXT,MANUAL INSERTION ACTIVATED!!",
+    "URL": "https://www.ibm.com/think/topics/artificial-intelligence"
   }
 ]
